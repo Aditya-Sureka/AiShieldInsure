@@ -13,6 +13,11 @@ import { AuthProvider } from "@/hooks/use-auth";
 import { ProtectedRoute } from "./lib/protected-route";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import Contact from "@/pages/static/contact";
+import FAQ from "@/pages/static/faq";
+import PrivacyPolicy from "@/pages/static/privacy-policy";
+import TermsOfService from "@/pages/static/terms-of-service";
+import RiskAssessment from "@/pages/risk-assessment";
 
 function Router() {
   return (
@@ -26,6 +31,11 @@ function Router() {
           <ProtectedRoute path="/submit-claim" component={SubmitClaim} />
           <Route path="/resources" component={Resources} />
           <Route path="/success-stories" component={SuccessStories} />
+          <Route path="/static/contact" component={Contact} />
+          <Route path="/static/faq" component={FAQ} />
+          <Route path="/static/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/static/terms-of-service" component={TermsOfService} />
+          <Route path="/risk-assessment" component={RiskAssessment} />
           <Route component={NotFound} />
         </Switch>
       </main>
