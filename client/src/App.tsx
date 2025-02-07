@@ -18,6 +18,7 @@ import FAQ from "@/pages/static/faq";
 import PrivacyPolicy from "@/pages/static/privacy-policy";
 import TermsOfService from "@/pages/static/terms-of-service";
 import RiskAssessment from "@/pages/risk-assessment";
+import FraudSimulator from "@/pages/fraud-simulator";
 
 function Router() {
   return (
@@ -36,6 +37,7 @@ function Router() {
           <Route path="/static/privacy-policy" component={PrivacyPolicy} />
           <Route path="/static/terms-of-service" component={TermsOfService} />
           <Route path="/risk-assessment" component={RiskAssessment} />
+          <Route path="/fraud-simulator" component={FraudSimulator} />
           <Route component={NotFound} />
         </Switch>
       </main>
