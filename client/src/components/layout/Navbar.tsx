@@ -30,6 +30,13 @@ export default function Navbar() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
+                <Link href="/fraud-simulator">
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Fraud Simulator
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
                 <Link href="/success-stories">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Success Stories
